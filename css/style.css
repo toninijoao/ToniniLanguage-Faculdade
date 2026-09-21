@@ -1,0 +1,18 @@
+:root {
+  --azul-marinho: #1B2A4A;
+  --azul-marinho-claro: #26375E;
+  --dourado: #F4A300;
+  --coral: #E63946;
+  --verde-agua: #2A9D8F;
+  --fundo: #F6F7FB;
+  --fundo-alt: #FFFFFF;
+  --texto: #1D2333;
+  --texto-suave: #5B6478;
+  --borda: #E1E5F0;
+
+  --fonte-titulo: 'Fraunces', Georgia, serif;
+  --fonte-texto: 'Inter', Arial, sans-serif;
+
+  --raio: 10px;
+  --sombra: 0 10px 30px rgba(27, 42, 74, 0.08);
+}
