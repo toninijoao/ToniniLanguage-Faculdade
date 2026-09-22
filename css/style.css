@@ -326,3 +326,72 @@ h3 {
   font-size: 0.95rem;
   margin-top: 0.4rem;
 }
+
+.grade-cursos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+}
+
+.cartao-curso {
+  background: var(--fundo-alt);
+  border-radius: var(--raio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  display: flex;
+  flex-direction: column;
+}
+
+.cartao-curso img {
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cartao-curso-corpo {
+  padding: 1.4rem 1.4rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cartao-curso-corpo p {
+  color: var(--texto-suave);
+  font-size: 0.92rem;
+  flex: 1;
+  margin: 0.5rem 0 1rem;
+}
+
+.preco {
+  font-family: var(--fonte-titulo);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--azul-marinho);
+}
+
+.preco span {
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+  font-weight: 400;
+  font-family: var(--fonte-texto);
+}
+
+.linha-curso {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.botao-secundario {
+  background: var(--azul-marinho);
+  color: #fff;
+  padding: 0.6rem 1.1rem;
+  border-radius: var(--raio);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.botao-secundario:hover {
+  background: var(--azul-marinho-claro);
+}
