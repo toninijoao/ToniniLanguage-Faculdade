@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 :root {
   --azul-marinho: #1B2A4A;
   --azul-marinho-claro: #26375E;
@@ -15,4 +18,61 @@
 
   --raio: 10px;
   --sombra: 0 10px 30px rgba(27, 42, 74, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  color: var(--texto);
+  background: var(--fundo);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fonte-titulo);
+  color: var(--azul-marinho);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(1.7rem, 2.5vw, 2.3rem);
+  margin-bottom: 0.6rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+.material-icons {
+  user-select: none;
 }
