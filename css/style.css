@@ -148,3 +148,72 @@ h3 {
   font-size: 1.6rem;
   cursor: pointer;
 }
+
+.hero {
+  background: linear-gradient(
+    180deg,
+    var(--azul-marinho) 0%,
+    var(--azul-marinho-claro) 100%
+  );
+  color: #fff;
+  padding: 4.5rem 0 5.5rem;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.selo {
+  display: inline-block;
+  background: rgba(244, 163, 0, 0.15);
+  color: var(--dourado);
+  border: 1px solid rgba(244, 163, 0, 0.4);
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  margin-bottom: 1rem;
+}
+
+.hero h1 em {
+  color: var(--dourado);
+  font-style: normal;
+}
+
+.hero p {
+  color: #C6D0E6;
+  font-size: 1.05rem;
+  max-width: 46ch;
+  margin-bottom: 1.6rem;
+}
+
+.botao-primario {
+  display: inline-block;
+  background: var(--dourado);
+  color: var(--azul-marinho);
+  font-weight: 700;
+  padding: 0.85rem 1.6rem;
+  border-radius: var(--raio);
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.botao-primario:hover {
+  background: #ffb733;
+}
+
+.hero-nota {
+  color: #98A5C4;
+  font-size: 0.85rem;
+  margin-top: 0.9rem;
+}
