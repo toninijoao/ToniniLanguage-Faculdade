@@ -291,3 +291,38 @@ h3 {
   color: var(--texto-suave);
   font-size: 0.85rem;
 }
+
+.grade-diferenciais {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.6rem;
+}
+
+.cartao-diferencial {
+  background: var(--fundo-alt);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: 1.8rem;
+}
+
+.icone-caixa {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(244, 163, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icone-caixa .material-icons {
+  font-size: 22px;
+  color: var(--dourado);
+}
+
+.cartao-diferencial p {
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+  margin-top: 0.4rem;
+}
