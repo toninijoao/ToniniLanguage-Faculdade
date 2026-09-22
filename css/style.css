@@ -251,3 +251,28 @@ h3 {
     display: block;
   }
 }
+
+.faixa {
+  background: var(--fundo-alt);
+  border-bottom: 1px solid var(--borda);
+}
+
+.faixa .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1.6rem 0;
+  text-align: center;
+}
+
+.faixa-num {
+  font-family: var(--fonte-titulo);
+  font-size: 1.6rem;
+  color: var(--azul-marinho);
+  font-weight: 700;
+}
+
+.faixa-rotulo {
+  color: var(--texto-suave);
+  font-size: 0.85rem;
+}
