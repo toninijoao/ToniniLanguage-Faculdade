@@ -76,3 +76,75 @@ h3 {
 .material-icons {
   user-select: none;
 }
+
+.cabecalho {
+  background: var(--azul-marinho);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.marca {
+  font-family: var(--fonte-titulo);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.marca span {
+  color: var(--dourado);
+}
+
+.menu {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.menu a {
+  color: #DCE3F2;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+  color: var(--dourado);
+}
+
+.menu .icone-menu {
+  font-size: 18px;
+  vertical-align: -4px;
+  margin-right: 4px;
+  color: currentColor;
+}
+
+.botao-cta {
+  background: var(--dourado);
+  color: var(--azul-marinho) !important;
+  padding: 0.55rem 1.2rem;
+  border-radius: var(--raio);
+  font-weight: 600;
+}
+
+.botao-cta:hover {
+  background: #ffb733;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
