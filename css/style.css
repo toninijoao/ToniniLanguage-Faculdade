@@ -469,3 +469,92 @@ h3 {
     padding: 1.5rem;
   }
 }
+
+.depoimentos {
+  background: var(--fundo-alt);
+}
+
+.grade-depoimentos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.cartao-depoimento {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: 1rem;
+}
+
+.depoimento-estrelas {
+  display: flex;
+  gap: 0.2rem;
+  margin-bottom: 1.25rem;
+  color: var(--destaque);
+}
+
+.depoimento-estrelas .material-icons {
+  font-size: 1.2rem;
+}
+
+.cartao-depoimento blockquote {
+  flex: 1;
+  margin: 0 0 1.5rem;
+  color: var(--texto);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.depoimento-autor {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--borda);
+}
+
+.depoimento-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  background: var(--primaria);
+  color: var(--branco);
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.depoimento-autor strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.95rem;
+}
+
+.depoimento-autor span {
+  color: var(--texto-suave);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .grade-depoimentos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grade-depoimentos {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .cartao-depoimento {
+    padding: 1.5rem;
+  }
+}
