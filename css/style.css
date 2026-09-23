@@ -614,13 +614,22 @@ footer ul a:hover {
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 50%;
   color: #fff;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition: background 0.2s ease,
+              border-color 0.2s ease,
+              transform 0.2s ease;
 }
 
 .rodape-social a:hover {
   border-color: var(--dourado);
   background: var(--dourado);
   color: var(--azul-marinho);
+  transform: translateY(-3px);
+}
+
+.rodape-social svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
 }
 
 .rodape-social .material-icons {
