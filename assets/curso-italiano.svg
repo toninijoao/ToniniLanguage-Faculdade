@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-labelledby="itaTitle">
+  <title id="itaTitle">Ilustração representando o curso de italiano, com a silhueta do Coliseu e uma faixa nas cores da bandeira italiana</title>
+  <rect width="400" height="240" fill="#FDF3E7"/>
+  <rect y="200" width="400" height="40" fill="#7A3B2E"/>
+  <!-- silhueta Coliseu -->
+  <g fill="#7A3B2E">
+    <path d="M90 200 V120 a110 60 0 0 1 220 0 V200 Z"/>
+  </g>
+  <g fill="#FDF3E7">
+    <rect x="105" y="150" width="16" height="26"/>
+    <rect x="135" y="140" width="16" height="36"/>
+    <rect x="165" y="132" width="16" height="44"/>
+    <rect x="195" y="128" width="16" height="48"/>
+    <rect x="225" y="132" width="16" height="44"/>
+    <rect x="255" y="140" width="16" height="36"/>
+    <rect x="285" y="150" width="16" height="26"/>
+  </g>
+  <!-- faixa bandeira -->
+  <rect x="0" y="0" width="133" height="30" fill="#2A9D8F"/>
+  <rect x="133" y="0" width="134" height="30" fill="#FFFFFF"/>
+  <rect x="267" y="0" width="133" height="30" fill="#E63946"/>
+</svg>
