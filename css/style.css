@@ -939,3 +939,133 @@ footer ul a:hover {
         width: 100%;
     }
 }
+
+.pagina-formulario {
+    min-height: calc(100vh - 80px);
+    padding: 64px 0;
+    background: var(--fundo);
+}
+
+.cartao-formulario {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px;
+    background: var(--fundo-alt);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+}
+
+.cartao-formulario h1 {
+    margin-bottom: 12px;
+    color: var(--azul-marinho);
+    font-family: "Fraunces", serif;
+    font-size: 2.2rem;
+    line-height: 1.2;
+}
+
+.cartao-formulario > p {
+    margin-bottom: 32px;
+    color: var(--texto-suave);
+    line-height: 1.7;
+}
+
+.cartao-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo label {
+    color: var(--texto);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 14px;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    background: var(--fundo-alt);
+    color: var(--texto);
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.campo input::placeholder {
+    color: #929bad;
+}
+
+.campo input:focus,
+.campo select:focus {
+    border-color: var(--dourado);
+    box-shadow: 0 0 0 3px rgba(244, 163, 0, 0.15);
+}
+
+.linha-dois-campos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.botao-form {
+    width: 100%;
+    min-height: 50px;
+    margin-top: 8px;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    background: var(--dourado);
+    color: var(--azul-marinho);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.botao-form:hover {
+    background: #d98e00;
+    transform: translateY(-2px);
+}
+
+.botao-form:active {
+    transform: translateY(0);
+}
+
+/* Rodapé do formulário */
+
+.rodape-formulario {
+    margin-top: 28px;
+    margin-bottom: 0;
+    color: var(--texto-suave);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.rodape-formulario a {
+    color: var(--azul-marinho);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.rodape-formulario a:hover {
+    color: var(--dourado);
+    text-decoration: underline;
+}
