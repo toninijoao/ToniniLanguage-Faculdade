@@ -1211,3 +1211,19 @@ footer ul a:hover {
     color: var(--dourado);
     text-decoration: underline;
 }
+
+@media (max-width: 600px) {
+    .pagina-formulario {
+        padding: 32px 0;
+    }
+    .cartao-formulario {
+        padding: 28px 20px;
+    }
+    .cartao-formulario h1 {
+        font-size: 1.8rem;
+    }
+    .linha-dois-campos {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
