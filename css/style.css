@@ -1049,8 +1049,6 @@ footer ul a:hover {
     transform: translateY(0);
 }
 
-/* Rodapé do formulário */
-
 .rodape-formulario {
     margin-top: 28px;
     margin-bottom: 0;
@@ -1068,4 +1066,20 @@ footer ul a:hover {
 .rodape-formulario a:hover {
     color: var(--dourado);
     text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .pagina-formulario {
+        padding: 32px 0;
+    }
+    .cartao-formulario {
+        padding: 28px 20px;
+    }
+    .cartao-formulario h1 {
+        font-size: 1.8rem;
+    }
+    .linha-dois-campos {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
 }
