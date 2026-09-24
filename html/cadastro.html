@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Matrícula | Pansanato Language</title>
+
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <nav class="nav container" aria-label="Navegação principal">
+
+      <a href="../index.html" class="marca">
+        Pansanato <span>Language</span>
+      </a>
+
+      <button
+        id="botaoMenu"
+        class="menu-toggle"
+        aria-label="Abrir menu de navegação"
+        aria-controls="menuNavegacao"
+      >
+        <span class="material-icons" aria-hidden="true">
+          menu
+        </span>
+      </button>
+      <ul class="menu" id="menuNavegacao">
+        <li>
+          <a href="../index.html#inicio">Início</a>
+        </li>
+        <li>
+          <a href="../index.html#cursos">Cursos</a>
+        </li>
+        <li>
+          <a href="admin.html">
+            <span class="material-icons icone-menu" aria-hidden="true">
+              admin_panel_settings
+            </span>
+            Admin
+          </a>
+        </li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+        <li>
+          <a href="cadastro.html" class="botao-cta">
+            Matricular-se
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pagina-formulario">
+    <div class="container">
+      <div class="cartao-formulario">
+        <h1>Faça sua matrícula</h1>
+        <p>
+          Preencha os dados abaixo para garantir sua vaga
+          em um dos nossos cursos.
+        </p>
+
+        <form action="login.html" method="GET">
+
+          <div class="campo">
+            <label for="nome">Nome completo</label>
+
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Digite seu nome completo"
+              required
+            />
+          </div>
+
+          <div class="linha-dois-campos">
+            <div class="campo">
+              <label for="email">E-mail</label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="voce@email.com"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="telefone">Telefone</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(00) 00000-0000"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="curso">Curso desejado</label>
+            <select id="curso" name="curso" required>
+              <option value="">
+                Selecione um curso...
+              </option>
+              <option value="ingles">
+                Inglês — R$ 699
+              </option>
+              <option value="italiano">
+                Italiano — R$ 1.299
+              </option>
+              <option value="frances">
+                Francês — R$ 1.599
+              </option>
+            </select>
+          </div>
+
+          <div class="linha-dois-campos">
+            <div class="campo">
+              <label for="senha">Senha</label>
+              <input
+                type="password"
+                id="senha"
+                name="senha"
+                placeholder="Crie uma senha"
+                minlength="6"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="confirmarSenha">
+                Confirmar senha
+              </label>
+              <input
+                type="password"
+                id="confirmarSenha"
+                name="confirmarSenha"
+                placeholder="Repita a senha"
+                minlength="6"
+                required
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="botao-form">
+            Concluir matrícula
+          </button>
+        </form>
+        <p class="rodape-formulario">
+          Já tem uma conta?
+          <a href="login.html">Faça login</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-baixo">
+      <span>
+        &copy; 2026 Pansanato Language.
+        Todos os direitos reservados.
+      </span>
+      <a
+        href="https://exemplo.com/curriculo.pdf"
+        target="_blank"
+        rel="noopener"
+      >
+        Currículo do desenvolvedor
+      </a>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
