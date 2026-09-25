@@ -71,7 +71,7 @@ h1,
 h2,
 h3 {
   font-family: var(--fonte-titulo);
-  color: var(--azul-marinho);
+  color: var(--roxo-escuro);
   line-height: 1.2;
 }
 
@@ -297,6 +297,7 @@ h3 {
 .faixa {
     height: var(--altura-faixa);
     background: var(--fundo-alt);
+    border-bottom-color: var(--borda);
     display: flex;
     align-items: center;
 }
@@ -318,7 +319,7 @@ h3 {
 
 .faixa-num {
   font-family: var(--fonte-titulo);
-  color: var(--azul-marinho);
+  color: var(--roxo-principal);
   font-size: 1.6rem;
   font-weight: 700;
 }
@@ -339,12 +340,14 @@ h3 {
   border: 1px solid var(--borda);
   border-radius: var(--raio);
   background: var(--fundo-alt);
+  border-color: var(--borda);
+  box-shadow: var(--sombra);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.cartao-diferencial:hover {
+.cartao-diferencial:hover, .cartao-curso:hover {
   transform: translateY(-4px);
-  box-shadow: var(--sombra);
+  box-shadow: var(--sombra-forte);
 }
 
 .icone-caixa {
@@ -355,15 +358,15 @@ h3 {
   height: 48px;
   margin-bottom: 1rem;
   border-radius: 50%;
-  background: rgba(244, 163, 0, 0.12);
+  background: var(--lavanda);
 }
 
 .icone-caixa .material-icons {
-  color: var(--dourado);
+  color: var(--roxo-principal);
   font-size: 22px;
 }
 
-.cartao-diferencial p {
+.cartao-diferencial p, .cartao-curso-corpo {
   margin-top: 0.4rem;
   color: var(--texto-suave);
   font-size: 0.95rem;
@@ -412,7 +415,7 @@ h3 {
 
 .preco {
   font-family: var(--fonte-titulo);
-  color: var(--azul-marinho);
+  color: var(--roxo-principal);
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -827,7 +830,13 @@ footer ul a:hover {
 
   .botao-secundario {
     text-align: center;
+    background: var(--roxo-principal);
+    color: var(--branco);
   }
+}
+
+.botao-secundario:hover {
+  background: var(--roxo-escuro);
 }
 
 @media (max-width: 600px) {
