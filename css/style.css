@@ -512,6 +512,7 @@ h3 {
   border-radius: var(--raio);
   background: var(--fundo-alt);
   box-shadow: var(--sombra);
+  background: var(--fundo-alt);
 }
 
 .depoimento > p {
@@ -542,6 +543,11 @@ h3 {
   background: var(--azul-marinho);
   color: #fff;
   text-align: center;
+  background: linear-gradient(
+    135deg,
+    var(--roxo-escuro),
+    var(--roxo-principal)
+  );
 }
 
 .chamada-final .container {
@@ -562,25 +568,26 @@ h3 {
 .chamada-final p {
   max-width: 600px;
   margin-bottom: 2rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: #E9D5FF;
   font-size: 1.05rem;
   line-height: 1.7;
 }
 
 .chamada-final .botao-primario {
-  background: var(--dourado);
-  color: var(--azul-marinho);
+  background: var(--branco);
+  color: var(--roxo-principal);
+  box-shadow: none;
 }
 
 .chamada-final .botao-primario:hover {
-  background: #ffb733;
-  color: var(--azul-marinho);
+  background: var(--lavanda);
+  color: var(--roxo-escuro);
 }
 
 footer {
   padding: 4rem 0 1.5rem;
-  background: #151E34;
-  color: #fff;
+  background: var(--roxo-profundo);
+  color: var(--branco);
 }
 
 footer > .container:first-child {
@@ -593,15 +600,19 @@ footer > .container:first-child {
 .rodape-marca {
   display: inline-block;
   margin-bottom: 1rem;
-  color: #fff;
+  color: var(--branco);
   font-family: var(--fonte-titulo);
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.rodape-sobre {
+.rodape-marca span {
+  color: var(--roxo-neon);
+}
+
+.rodape-sobre, rodape-descricao {
   max-width: 320px;
-  color: rgba(255, 255, 255, 0.7);
+  color: #D8B4FE;
   font-size: 0.95rem;
   line-height: 1.7;
 }
@@ -672,6 +683,7 @@ footer ul a:hover {
     border: 1px solid #526079;
     border-radius: 50%;
     color: #ffffff;
+    border-color: rgba(216, 180, 254, 0.4);
     transition: background-color 0.2s ease,
                 border-color 0.2s ease;
 }
@@ -696,13 +708,13 @@ footer ul a:hover {
 }
 
 .rodape-links a {
-    color: #c5ccdc;
+    color: #D8B4FE;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .rodape-links a:hover {
-    color: var(--dourado);
+    color: var(--roxo-neon);
 }
 
 .rodape-baixo {
@@ -712,12 +724,17 @@ footer ul a:hover {
     gap: 24px;
     padding-top: 24px;
     border-top: 1px solid #35415c;
+    border-top-color: rgba(216, 180, 254, 0.2);
+}
+
+.rodape-inferior {
+  border-top-color: rgba(216, 180, 254, 0.2);
 }
 
 .rodape-baixo p,
 .rodape-baixo a {
     margin: 0;
-    color: #aeb8cd;
+    color: #C4B5FD;
     font-size: 0.875rem;
     line-height: 1.6;
 }
@@ -727,8 +744,12 @@ footer ul a:hover {
     transition: color 0.2s ease;
 }
 
-.rodape-baixo a:hover {
-    color: var(--dourado);
+.rodape-baixo a:hover, rodape-politicas a:hover {
+    color: var(--roxo-neon);
+}
+
+.rodape-baixo span, rodape-inferior p{
+  color: #C4B5FD;
 }
 
 @media (max-width: 768px) {
