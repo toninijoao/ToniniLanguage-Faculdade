@@ -34,6 +34,10 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  min-height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 body {
@@ -41,6 +45,22 @@ body {
   color: var(--texto);
   background: var(--fundo);
   line-height: 1.6;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+.cabecalho,
+.hero,
+.faixa,
+.secao,
+.chamada-final,
+footer {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 img {
@@ -211,7 +231,7 @@ h3 {
 
 .hero {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     height: calc(100vh - var(--altura-header) - var(--altura-faixa));
     min-height: 560px;
     background: var(--azul-marinho);
@@ -275,23 +295,22 @@ h3 {
 }
 
 .hero-imagem {
-    height: 100%;
+    height: auto;
     min-width: 0;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     align-self: stretch;
-    transform: translateX(180px);
 }
 
 .hero-imagem img {
     display: block;
-    width: 115%;
-    max-width: none;
-    max-height: 100%;
+    width: 100%;
+    max-width: 740px;
+    max-height: none;
     height: auto;
     object-fit: contain;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .faixa {
@@ -1267,4 +1286,206 @@ footer ul a:hover {
         grid-template-columns: 1fr;
         gap: 24px;
     }
+}
+
+@media (min-width: 769px) {
+    .hero {
+        min-height: calc(100vh - 155px);
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero .container {
+        width: min(1120px, 92%);
+    }
+
+    .hero-conteudo {
+        min-height: inherit;
+        display: flex;
+        align-items: center;
+    }
+
+    .faixa {
+        min-height: 78px;
+        box-sizing: border-box;
+    }
+
+}
+
+:root {
+  --altura-header: 76px;
+  --altura-faixa: 78px;
+}
+
+.cabecalho {
+  width: 100%;
+  height: var(--altura-header);
+  position: relative;
+  z-index: 100;
+  background: var(--roxo-escuro);
+  box-shadow: 0 2px 15px rgba(46, 16, 101, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: var(--altura-header);
+  padding: 0;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.nav > .logo-link > img {
+  height: 68px;
+  max-width: 190px;
+}
+
+.navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  gap: 32px;
+  min-width: 0;
+}
+
+.menu-central,
+.menu-direita {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-central {
+  justify-content: center;
+  gap: 28px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-direita {
+  justify-content: flex-end;
+  gap: 18px;
+  flex-shrink: 0;
+}
+
+.menu-central a,
+.menu-direita a {
+  white-space: nowrap;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .nav {
+    gap: 16px;
+  }
+
+  .navegacao {
+    gap: 18px;
+  }
+
+  .menu-central {
+    gap: 18px;
+  }
+
+  .menu-direita {
+    gap: 12px;
+  }
+
+  .nav > .logo-link > img {
+    height: 60px;
+    max-width: 160px;
+}
+}
+
+@media (max-width: 860px) {
+  .cabecalho {
+    height: var(--altura-header);
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 8px;
+    border: none;
+    background: transparent;
+    color: var(--branco);
+    cursor: pointer;
+  }
+
+  .navegacao {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 20px;
+    background: var(--roxo-escuro);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .navegacao.aberto {
+    display: flex;
+  }
+
+  .menu-central,
+  .menu-direita {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu-central a,
+  .menu-direita a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  .menu-direita {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .botao-cta {
+    text-align: center;
+  }
+
+  .menu {
+    position: static;
+    padding: 0;
+    background: transparent;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav > .logo-link > img {
+    height: 48px;
+    max-width: 140px;
+  }
 }
