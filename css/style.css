@@ -2,32 +2,34 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 :root {
-  --azul-marinho: #1B2A4A;
-  --azul-marinho-claro: #26375E;
-  --dourado: #F4A300;
-  --coral: #E63946;
-  --verde-agua: #2A9D8F;
-
-  --fundo: #F6F7FB;
+  --roxo-principal: #7C3AED;
+  --roxo-neon: #A855F7;
+  --roxo-vibrante: #9333EA;
+  --roxo-escuro: #2E1065;
+  --roxo-profundo: #1E103F;
+  --lavanda: #F3E8FF;
+  --lavanda-clara: #FAF5FF;
+  --branco: #FFFFFF;
+  --preto-suave: #171321;
+  --fundo: #FCFAFF;
   --fundo-alt: #FFFFFF;
-  --texto: #1D2333;
-  --texto-suave: #5B6478;
-  --borda: #E1E5F0;
-
-  --fonte-titulo: 'Fraunces', Georgia, serif;
-  --fonte-texto: 'Inter', Arial, sans-serif;
-
-  --raio: 10px;
-  --sombra: 0 10px 30px rgba(27, 42, 74, 0.08);
-
-  --altura-header: 72px;
-  --altura-faixa: 100px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  --texto: #211A2D;
+  --texto-suave: #6B6278;
+  --borda: #E9DDF7;
+  --azul-marinho: var(--roxo-escuro);
+  --azul-marinho-claro: var(--roxo-principal);
+  --dourado: var(--roxo-neon);
+  --coral: #EC4899;
+  --verde-agua: #C084FC;
+  --primaria: var(--roxo-principal);
+  --destaque: var(--roxo-neon);
+  --fonte-titulo: "Fraunces", Georgia, serif;
+  --fonte-texto: "Inter", Arial, sans-serif;
+  --raio: 12px;
+  --sombra:
+    0 10px 30px rgba(124, 58, 237, 0.10);
+  --sombra-forte:
+    0 12px 35px rgba(124, 58, 237, 0.18);
 }
 
 html {
@@ -103,7 +105,8 @@ h3 {
 
 .cabecalho {
     height: var(--altura-header);
-    background: var(--azul-marinho);
+    background: var(--roxo-escuro);
+    box-shadow: 0 2px 15px rgba(46, 16, 101, 0.18);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     display: flex;
     align-items: center;
@@ -120,11 +123,11 @@ h3 {
   font-family: var(--fonte-titulo);
   font-size: 1.4rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--branco);
 }
 
 .marca span {
-  color: var(--dourado);
+  color: var(--roxo-neon);
 }
 
 .menu {
@@ -134,7 +137,7 @@ h3 {
 }
 
 .menu a {
-  color: #DCE3F2;
+  color: #EDE9FE;
   font-size: 0.95rem;
   font-weight: 500;
   transition: color 0.2s ease;
@@ -142,7 +145,7 @@ h3 {
 
 .menu a:hover,
 .menu a:focus-visible {
-  color: var(--dourado);
+  color: var(--roxo-neon);
 }
 
 .menu .icone-menu {
@@ -155,13 +158,13 @@ h3 {
 .botao-cta {
   padding: 0.55rem 1.2rem;
   border-radius: var(--raio);
-  background: var(--dourado);
-  color: var(--azul-marinho) !important;
+  background: var(--roxo-neon);
+  color: var(--branco) !important;
   font-weight: 600 !important;
 }
 
 .botao-cta:hover {
-  background: #ffb733;
+  background: var(--roxo-principal);
 }
 
 .menu-toggle {
@@ -791,7 +794,7 @@ footer ul a:hover {
     align-items: flex-start;
     gap: 1rem;
     padding: 1rem 6%;
-    background: var(--azul-marinho);
+    background: var(--roxo-escuro);
   }
 
   .menu.aberto {
