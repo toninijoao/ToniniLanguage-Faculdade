@@ -181,8 +181,9 @@ h3 {
   padding: 0.85rem 1.6rem;
   border: none;
   border-radius: var(--raio);
-  background: var(--dourado);
-  color: var(--azul-marinho);
+  background: var(--roxo-neon);
+  color: var(--branco);
+  box-shadow: 0 5px 20px rgba(168, 85, 247, 0.25);
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
@@ -190,8 +191,8 @@ h3 {
 }
 
 .botao-primario:hover {
-  background: #ffb733;
-  transform: translateY(-2px);
+  background: var(--roxo-vibrante);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.35);
 }
 
 .botao-secundario {
@@ -211,14 +212,20 @@ h3 {
 .hero {
     position: relative;
     overflow: hidden;
-
     height: calc(100vh - var(--altura-header) - var(--altura-faixa));
     min-height: 560px;
-
     background: var(--azul-marinho);
-
     display: flex;
     align-items: center;
+
+     background: linear-gradient(
+      135deg,
+      var(--roxo-profundo) 0%,
+      var(--roxo-escuro) 48%,
+      var(--roxo-principal) 100%
+  );
+
+  color: var(--branco);
 }
 
 .hero .container {
@@ -249,21 +256,21 @@ h3 {
 }
 
 .hero h1 em {
-    color: var(--dourado);
+    color: var(--roxo-neon);
     font-style: normal;
 }
 
 .hero p {
     max-width: 46ch;
     margin-bottom: 1.6rem;
-    color: #C6D0E6;
+    color: #E9D5FF;
     font-size: 1.05rem;
 }
 
 .hero-nota {
     margin-top: 0.9rem;
     margin-bottom: 0 !important;
-    color: #98A5C4 !important;
+    color: #D8B4FE; !important;
     font-size: 0.85rem !important;
 }
 
