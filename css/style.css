@@ -313,6 +313,11 @@ h3 {
     margin: 0 auto;
 }
 
+.hero-imagem img:hover{
+  transform: scale(1.01);
+  filter: brightness(1.05);
+}
+
 .faixa {
     height: var(--altura-faixa);
     background: var(--fundo-alt);
